@@ -29,7 +29,7 @@ while True:
             print(f"Unidades obsequiadas: {unidades_obsequio} unidades")
             
             continuar = input("¿Desea realizar otro cálculo? (s/n): ")
-            if continuar.lower() != 's'| continuar.lower =='n':
+            if continuar.lower() != 's':
                 break
         except ValueError:
             print("Por favor ingrese valores válidos.")
