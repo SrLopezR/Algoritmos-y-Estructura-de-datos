@@ -90,12 +90,13 @@ while True:
         nombre = input("Nombre del producto a modificar: ")
         # Buscamos el producto en la lista
         producto_encontrado = None
+        #iteracion en la lista para encontrar el producto
         for producto in productos_lista:
-            if producto.nombre.lower() == nombre.lower():
+            if producto.nombre.lower() == nombre.lower(): #Se compara el nombre del producto en minuscula para evitar errores
                 producto_encontrado = producto
                 break
         
-        if producto_encontrado:
+        if producto_encontrado: #Se ejecuta si se encuentra el producto
             # Validamos que la cantidad sea un número positivo
             while True:
                 try:
